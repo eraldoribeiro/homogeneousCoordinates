@@ -1,42 +1,42 @@
 %% Homogeneous coordinates 
 % 
 % 
-Linear geometric transformations can be written as concise equations using 
-matrix multiplication. For instance, let the following transformation maps a 
-vector ${\bf x}$ onto a vector ${\bf x}^\prime$: 
-
-$${\bf x}^\prime = SR\,{\bf x},$$
-
-where $S$ is a scaling matrix and $R$ is a rotation matrix. $S$ and $R$ are 
-linear transformations, and so is the composition $SR$. 
-
-This compact form of the transformation matrix simplifies both its computation 
-and notation. For example, we can change the order in which the transformations 
-are applied by simply changing the order of multiplication, i.e.:  
-
-$${\bf x}^{\prime\prime} = RS\,{\bf x},$$
-
-or we can calculate the inverse transformation directly, i.e., the inverse 
-of ${\bf x}^\prime = SR\,{\bf x}$ can be written as: 
-
-${\bf x} = (SR)^{-1}\,{\bf x}^\prime = (R^{-1}S^{-1})\,{\bf x}^\prime$.
-
-However, this compact notation breaks if the transformation includes a translation 
-(i.e., for affine transformations). An affine transformation includes a linear 
-component and a translation component and is written as follows:
-
-${\bf x}^\prime = A{\bf x} + {\bf t} $.  
-
-In 2-D, the matrix form of the affine transformation can be written explicitly 
-as: 
-
-$$\left[\begin{array}{c}		x^\prime \\		y^\prime\end{array}\right] = \left[\begin{array}{c}		
-a_1 & a_2 \\		a_3 & a_4\end{array}\right]\left[\begin{array}{c}    x \\        
-y\end{array}\right]+\left[\begin{array}{c}    t_x \\        t_y\end{array}\right]$$
-
-Now, the transformation notation combines a multiplication followed by a addition. 
-It can no longer be represented by a single matrix or by multiplications only 
-(i.e., we have to mix multiplication and addition).  
+% Linear geometric transformations can be written as concise equations using 
+% matrix multiplication. For instance, let the following transformation maps a 
+% vector ${\bf x}$ onto a vector ${\bf x}^\prime$: 
+% 
+% $${\bf x}^\prime = SR\,{\bf x},$$
+% 
+% where $S$ is a scaling matrix and $R$ is a rotation matrix. $S$ and $R$ are 
+% linear transformations, and so is the composition $SR$. 
+% 
+% This compact form of the transformation matrix simplifies both its computation 
+% and notation. For example, we can change the order in which the transformations 
+% are applied by simply changing the order of multiplication, i.e.:  
+% 
+% $${\bf x}^{\prime\prime} = RS\,{\bf x},$$
+% 
+% or we can calculate the inverse transformation directly, i.e., the inverse 
+% of ${\bf x}^\prime = SR\,{\bf x}$ can be written as: 
+% 
+% ${\bf x} = (SR)^{-1}\,{\bf x}^\prime = (R^{-1}S^{-1})\,{\bf x}^\prime$.
+% 
+% However, this compact notation breaks if the transformation includes a translation 
+% (i.e., for affine transformations). An affine transformation includes a linear 
+% component and a translation component and is written as follows:
+% 
+% ${\bf x}^\prime = A{\bf x} + {\bf t} $.  
+% 
+% In 2-D, the matrix form of the affine transformation can be written explicitly 
+% as: 
+% 
+% $$\left[\begin{array}{c}		x^\prime \\		y^\prime\end{array}\right] = \left[\begin{array}{c}		
+% a_1 & a_2 \\		a_3 & a_4\end{array}\right]\left[\begin{array}{c}    x \\        
+% y\end{array}\right]+\left[\begin{array}{c}    t_x \\        t_y\end{array}\right]$$
+% 
+% Now, the transformation notation combines a multiplication followed by a addition. 
+% It can no longer be represented by a single matrix or by multiplications only 
+% (i.e., we have to mix multiplication and addition).  
 %% Example:
 
 % Scaling
